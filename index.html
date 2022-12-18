@@ -1,18 +1,12 @@
 <!DOCTYPE html>
 <html>
-	<style>
-		body{
-			background-image: url('./images/back.jpg');
-		}
-		h1{
-			color: #ff9b56;
-		}
-	</style>
     <head>
 		<title>Homepage</title>
+		<link rel="stylesheet" href="style.css">
     </head>
     <body>
-		<h1>Compound Interest Calculator</h1> 
+		<h1 class="MyHead">Compound Interest Calculator</h1> 
+		<div class="dataDiv">
 		<form action="myfunction" method="post">
 			<table>
 				<tr><td>Principle: </td>
@@ -39,9 +33,11 @@
 				</tr>
 				<tr>
 					<td></td>
-					<td><button type="submit" name="btn" id="btn" value="calculate">Calculate</button></td>
+					<td><button type="submit" name="btn" id="btn" value="calculate">calculate</button>
+					<button type="reset" name="btn" id="btn" value="reset">reset</button></td>
 				</tr>
 			</table>
 		</form>
+		</div>
     </body>
 </html>

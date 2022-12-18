@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+.MyHead{
+	padding: 5px;
+	margin: 400px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	border-radius: 25px;
+	background: rgba(0,0,0,0.5);
+	color: rgb(255,155,86) ;
+	text-align: center;
+	box-sizing: content-box;
+	font-family: cursive ;
+}
+
+.MyHead:hover{
+	background-color: rgba(255,155,86,0.5) ;
+	color: rgb(0,0,0);
+	
+}
+
+body {
+	background-image: url('./images/back.jpg');
+	display: block;
+	line-height: 1.5;
+	
+}
+
+table{
+	display: inline-block;
+	background-color: rgba(247,247,247,0.5);
+	padding: 25px;
+	border-radius: 25px;
+}
+
+.dataDiv{
+	margin-left: 450px;
+	font-size: 1.2rem;
+	text-align: left;
+	box-sizing: content-box;
+}
+input{
+	margin: 5px;
+	border-radius: 5px;
+	border: 0;
+	padding: 5px;
+}
+
+button{
+	margin: 5px;
+	border-radius: 5px;
+	padding: 5px;
+	width: 100px;
+	font-family: serif;
+	font-size: 1rem;
+	border: 0;
+}
+
+button:hover{
+	background-color: #000000;
+	color: #ffffff;
+}
+
+select{
+	margin: 5px;
+	width: 100px;
+	text-align: center;
+	font-size: 0.9rem;
+	font-family: arial;
+	border-radius: 5px;
+}
