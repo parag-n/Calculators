@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Compound Interest</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="dataDiv1">
+	<h1 class="MyHead">Compound Interest Calculator</h1>
+	</div>
+	<div class="dataDiv2">
+		<form action="myfunction" method="post">
+			<table>
+				<tr>
+					<td>Principle:</td>
+					<td><input type="text" name="principle" id="principle"></td>
+				</tr>
+				<tr>
+					<td>RoI (pcpa.):</td>
+					<td><input type="text" name="rate" id="rate"></td>
+				</tr>
+				<tr>
+					<td>No. of years:</td>
+					<td><input type="text" name="years" id="years"></td>
+				</tr>
+				<tr>
+					<td>Compounds:</td>
+					<td><select name="compounds" id="compounds">
+							<option value="1">monthly</option>
+							<option value="3">quarterly</option>
+							<option value="6">half-yearly</option>
+							<option value="12">yearly</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><button type="submit" name="btn" id="btn"
+							value="calculate">calculate</button>
+						<button type="reset" name="btn" id="btn" value="reset">reset</button></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>
