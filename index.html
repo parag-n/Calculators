@@ -2,44 +2,56 @@
 <html>
 <head>
 <title>Compound Interest</title>
-<link rel="stylesheet" href="style.css" type="text/html">
+<link rel="stylesheet" href="./style.css" type="text/css">
 </head>
 <body>
-	<div class="dataDiv1">
-	<h1 class="MyHead">Compound Interest Calculator</h1>
+	<div class="headDiv">
+	<h1>Compound Interest Calculator</h1>
 	</div>
-	<div class="dataDiv2">
-		<form action="404.html">
+	<div class="dataDiv">
+		<form action="">
 			<table>
 				<tr>
-					<td>Principle:</td>
-					<td><input type="text" name="principle" id="principle"></td>
+					<td><input type="text" name="principle" id="principle" placeholder="Principle amount"></td>
 				</tr>
 				<tr>
-					<td>RoI (pcpa.):</td>
-					<td><input type="text" name="rate" id="rate"></td>
+					<td><input type="text" name="rate" id="rate" placeholder="Rate of Interest"></td>
 				</tr>
 				<tr>
-					<td>No. of years:</td>
-					<td><input type="text" name="years" id="years"></td>
+					<td><input type="text" name="years" id="years" placeholder="No. of years"></td>
 				</tr>
 				<tr>
-					<td>Compounds:</td>
-					<td><select name="compounds" id="compounds">
-							<option value="1">monthly</option>
-							<option value="3">quarterly</option>
-							<option value="6">half-yearly</option>
-							<option value="12">yearly</option>
+					<td><select name="compounds" id="compounds" required>
+							<option value="" selected disabled>principle compounds</option>
+							<option value="12">monthly</option>
+							<option value="4">quarterly</option>
+							<option value="2">half-yearly</option>
+							<option value="1">yearly</option>
 					</select></td>
 				</tr>
 				<tr>
-					<td></td>
-					<td><button type="submit" name="btn" id="btn"
-							value="calculate">calculate</button>
-						<button type="reset" name="btn" id="btn" value="reset">reset</button></td>
+					<td><button type="button" name="btn" id="btn" onclick="calculate()">calculate</button></td>
+				</tr>
+					<td><button type="reset" name="btn" id="btn" value="reset">reset</button></td>
+				</tr>
+				<tr>
+					<td><input type="text" name="ans" id="ans" placeholder="Total amount to be paid is"></td>
 				</tr>
 			</table>
 		</form>
 	</div>
 </body>
+<script>
+	function calculate(){
+		var p=Number.parseFloat(document.getElementById("principle").value)
+		var r=Number.parseFloat(document.getElementById("rate").value)
+		var n=Number.parseFloat(document.getElementById("years").value)
+		var c=Number.parseInt(document.getElementById("compounds").value)
+		// let a=Math.pow((1+(r/(100*c))),n*c)
+		let base=1+(r/(100*c))
+		let power=n*c;
+		let a=Math.pow(base, power)
+		document.getElementById("ans").value=a*p
+	}
+</script>
 </html>

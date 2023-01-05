@@ -1,33 +1,31 @@
 @charset "UTF-8";
-.dataDiv2{
-	display: flex;
-	justify-content: center;
-	font-size: 1.2rem;
+
+body {
+	background-color: #3C6255;
 }
-.MyHead{
-	padding: 5px 25px 5px;
-	display: inline-block;
+
+.headDiv{
+	padding: 0.5vh 2vw 0.5vh;
+	align-content: center;
+	margin: auto;
+	width: fit-content;
 	border-radius: 25px;
 	background: rgba(0,0,0,0.5);
 	color: rgb(255,155,86) ;
 	font-family: cursive ;
 }
 
-body {
-	background-image: url('./images/back.jpg');
-	line-height: 1.5;
-}
-
-.sideImage{
-	margin-inline: auto;
-	border: 1px #ffffff;
-	display: flex;
-	justify-content: center;
-	border-radius: 25px;
+.dataDiv{
+	/* display: flex; */
+	/* align-content: center; */
+	margin: auto;
+	/* justify-content: center; */
+	/* font-size: 1.2vw; */
 }
 
 table{
-	display: inline-block;
+	/* display: inline-block; */
+	margin: auto;
 	padding: 25px;
 	border-radius: 25px;
 	background-color: rgba(247,247,247,0.5);
@@ -35,18 +33,30 @@ table{
 
 input{
 	margin: 5px;
+	padding: 5px 0;
+	width: 13vw;
 	border-radius: 5px;
 	border: 0;
-	padding: 5px;
+	text-align: center;
+	font-family: monospace;
 }
+
+/* 
+.sideImage{
+	margin-inline: auto;
+	border: 1px #ffffff;
+	display: flex;
+	justify-content: center;
+	border-radius: 25px;
+} */
 
 button{
 	margin: 5px;
 	border-radius: 5px;
 	padding: 5px;
-	width: 100px;
-	font-family: serif;
-	font-size: 1rem;
+	width: 13vw;
+	font-family: monospace;
+	font-size: 1.2rem;
 	border: 0;
 }
 
@@ -57,9 +67,13 @@ button:hover{
 
 select{
 	margin: 5px;
-	width: 100px;
+	padding: 5px;
+	width: 13vw;
 	text-align: center;
 	font-size: 0.9rem;
 	font-family: arial;
 	border-radius: 5px;
 }
+/* select:selected{
+	
+} */
