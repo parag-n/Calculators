@@ -1,11 +1,16 @@
 @charset "UTF-8";
+<<<<<<< HEAD:webapp/style.css
+.dataDiv1{
+=======
 
 body {
 	background-image: url('./images/back.jpg');
+	line-height: 1.5;
+	background-size: inherit;
 }
 
 .headDiv{
-
+>>>>>>> 1e329f99b039d42fb4b6d6adc7601a26d5e2722e:style.css
 	display: flex;
 	justify-content: center;
 	font-size: 1.2rem;
